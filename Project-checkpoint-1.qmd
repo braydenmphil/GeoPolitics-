@@ -1,0 +1,43 @@
+---
+title: "project-1"
+author: "Brayden Philabaum"
+format: html
+editor: visual
+---
+
+# Project 1
+
+## Context of Data
+
+```{r}
+# Reading in data from Git Hub
+democracy_data <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/main/data/2024/2024-11-05/democracy_data.csv')
+head(democracy_data)
+length(unique(democracy_data$country_name))
+```
+
+The data is a collection of 208 countries with coverage from 1950 to 2020 about democracy and dictatorship. There is a collection of data about the election process, the type of government (communist, democracy, monarch), as well as some basic information about the country. Thank you to Jon Harmon for curating this week's data set.
+
+## Data Cleaning
+
+This data set is in long format with 70 rows or years per country, and many of the years are unchanged due to it being the same person in power. Also, there are different types of governments, we could subset the data into their respective type of government. There could be some work with renaming the variables themselves for cleaner and clearer categories. Also converting variables to factors, checking for duplicates, and removing missing values.
+
+## Research Questions
+
+**This Data:**
+
+-   How have democracy scores changed over time across countries?
+
+-   Which countries/ regions have the lowest democracy scores?
+
+**Supplemental:**
+
+-   How does the GDP of a country relate to being a non-democracy?
+
+-   What type of government(monarch, democracy, communist) has the healthiest economy?
+
+## Visualizations
+
+![RQ1 visual](/Note%20Apr%206,%202026.png)
+
+![RQ2 visual](/IMG_0130%202.jpg)
