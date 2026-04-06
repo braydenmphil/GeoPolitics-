@@ -1,3 +1,7 @@
+.DS_Store
+*.html
+*_files/
+
 # macOS junk
 .DS_Store
 
